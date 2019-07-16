@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset    = "UTF-8">
+    <meta name       = "viewport" content        = "width=device-width, initial-scale=1.0">
+    <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+    <title>HTML Elements Example</title>
+    <style>
+            thead {color:green;}
+            tbody {color:blue;}
+            tfoot {color:red;}
+            
+            table, th, td {
+              border         : 1px solid black;
+              border-collapse: collapse;
+            }
+            tr td.heading{
+                font-size  : 20px;
+                font-weight: bold;
+                color      : red;
+                text-align : center;
+            }
+            .mainheading td{
+               color     : green;
+               font-size : 30px;
+               text-align: center;
+
+            }
+            </style>
+</head>
+<body>
+        <table width = "100%">
+                <thead>
+                  <tr>
+                      <td colspan = "5"><h1 style = "text-align: center">Html Elements Example</h1></td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class = "mainheading">
+                    <td>SNo</td>
+                    <td>Tag</td>
+                    <td>Describe</td>
+                    <td>Code</td>
+                    <td>Output</td>
+                  </tr>                   
+                <tr>
+                        <td>1</td>
+                        <td>article</td>
+                        <td>An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.</td>
+                        <td>
+                            <pre>
+                                    &ltarticle>
+                                    &lth1>Google Chrome&lt/h1>
+                                    &ltp>Google Chrome is a free, open-source web browser.&lt/p>
+                                    &lt/article>
+                            </pre>
+
+                        </td>
+                        <td>
+                            <article>
+                                    <h1>Google Chrome</h1>
+                                    <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
+                              </article>
+                            </td> 
+                </tr>
+
+                <tr>
+                        <td>2</td>
+                        <td>audio</td>
+                        <td>This tag defines sound, such as music or other audio streams.</td>
+                        <td>
+                            <pre>
+                                &ltaudio controls>
+                                &ltsource src="horse.ogg" type="audio/ogg">
+                                &ltsource src="horse.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio tag.
+                                        &lt/audio>
+                                    </pre>
+                        </td>
+                        <td>
+                                <audio controls>
+                                        <source src="horse.ogg" type="audio/ogg">
+                                        <source src="horse.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio tag.
+                                      </audio>
+                            </td> 
+                </tr>
+                <tr>
+                        <td>3</td>
+                        <td>canvas</td>
+                        <td>Draw a red square, on the fly, and show it inside the canvas element.</td>
+                        <td>
+                            <pre>   
+                                &ltcanvas id="myCanvas"></canvas>
+                                &ltscript>
+                                    var canvas = document.getElementById("myCanvas");
+                                    var ctx = canvas.getContext("2d");
+                                    ctx.fillStyle = "#FF0000";
+                                    ctx.fillRect(0, 0, 80, 80);
+                                &lt/script>
+                            </pre> 
+                        </td>
+                        <td>
+                                <canvas id="myCanvas"></canvas>
+                                <script>
+                                var canvas = document.getElementById("myCanvas");
+                                var ctx = canvas.getContext("2d");
+                                ctx.fillStyle = "#FF0000";
+                                ctx.fillRect(0, 0, 80, 80);
+                                </script>
+                        </td> 
+                </tr>
+                <tr>
+                        <td>4</td>
+                        <td>input</td>
+                        <td>
+                            
+                           The input element is used to create interactive controls for web-based 
+                           forms in order to accept data from the user; a wide variety of 
+                           types of input data and control widgets are available, depending 
+                           on the device and user agent.
+                            
+                        </td>
+                        <td>
+                            <pre>
+                               &ltlabel for="name">Enter Name :</label>
+                               &ltinput type="text" id="name" name="name" required
+                               minlength="4" maxlength="8" size="10">
+                            </pre>
+                        </td>
+                        <td>
+                                <label for="name">Enter Name:</label>
+                                <input type="text" id="name" name="name" required
+                                       minlength="4" maxlength="8" size="10">
+
+                        </td>
+
+                </tr>
+
+
+
+
+                <tr>
+                        <td>5</td>
+                        <td>footer</td>
+                        <td>A footer element typically contains:
+                                authorship information
+                                copyright information
+                                contact information
+                                sitemap
+                                back to top links
+                                related documents
+                        </td>
+                        <td>
+                            <pre>
+                                &ltfooter>
+                                &ltp>Posted by: Hege Refsnes</p>
+                                &ltp>Contact information: &lta href="mailto:someone@example.com">
+                                  someone@example.com</a>.</p>
+                                &lt/footer>
+                            </pre>
+                        </td>
+                        <td>
+                            <footer>
+                                <p>Posted by: Hege Refsnes</p>
+                                <p>Contact information: <a href="mailto:someone@example.com">
+                                someone@example.com</a>.</p>
+                              </footer>                            
+                        </td> 
+                </tr>
+
+                <tr>
+                        <td>6</td>
+                        <td>img</td>
+                        <td>
+                            The img tag defines an image in an HTML page.
+                            The img tag has two required attributes: src and alt.
+                        </td>
+                        <td>
+                            <pre>
+                                    &lt;img src="smiley.gif" alt="Smiley face" height="42" width="42">
+                            </pre> 
+                        </td>
+                        <td>
+                            <img src="smiley.gif" alt="Smiley face" height="42" width="42">
+                        </td> 
+                </tr>
+
+                <tr>
+                        <td>7</td>
+                        <td>code</td>
+                        <td></td>
+                                                <td>
+
+                        </td>
+                        <td>
+                            
+                        </td> 
+                </tr>
+
+
+
+
+                <tr>
+                        <td>8</td>
+                        <td>blockquotes</td>
+                        <td></td>                       
+                        <td>
+
+                        </td>
+                        <td>
+                            
+                        </td> 
+                </tr>
+
+                <tr>
+                        <td>9</td>
+                        <td>date</td>
+                        <td></td>                       
+                        <td>
+
+                        </td>
+                        <td>
+                            
+                        </td> 
+                </tr>
+                <tr>
+                        <td>10</td>
+                        <td>figure</td>
+                        <td></td>                       
+                        <td>
+
+                        </td>
+                        <td>
+                            
+                        </td> 
+                </tr>
+                <tr>
+                        <td>11</td>
+                        <td>form</td>
+                        <td></td>                       
+                        <td>
+
+                        </td>
+                        <td>
+                            
+                        </td> 
+                </tr>
+                <tr>
+                        <td>12</td>
+                        <td>legend</td>
+                        <td></td>                       
+                        <td>
+
+                        </td>
+                        <td>
+                            
+                        </td> 
+                </tr>
+
+                <tr>
+                        <td>12</td>
+                        <td>meta</td>
+                        <td></td>                       
+                        <td>
+
+                        </td>
+                        <td>
+                            
+                        </td> 
+                </tr>
+                <tr>
+                        <td>13</td>
+                        <td>meta</td>
+                        <td></td>                       
+                        <td>
+
+                        </td>
+                        <td>
+                            
+                        </td> 
+                </tr>
+
+                <tr>
+                        <td>14</td>
+                        <td>object</td>
+                        <td>The object tag defines an embedded object within an HTML document.
+                            Use this element to embed multimedia (like audio, video, Java applets, 
+                            ActiveX, PDF, and Flash) in your web pages.</td>                       
+                        <td>
+<pre>
+        &ltobject type="application/pdf"
+        data="/media/examples/In-CC0.pdf"
+        width="250"
+        height="200">
+    </object>
+</pre>
+                        </td>
+                        <td>
+                                <object type="application/pdf"
+                                data="/media/examples/In-CC0.pdf"
+                                width="250"
+                                height="200">
+                            </object>
+                            
+                        </td> 
+
+                </tr>
+
+                <tr>
+                    <td>15</td>
+                     <td>section</td>
+                                             <td></td>                       
+                            <td>
+                                <pre>
+                                        &lt;section>
+                                                &lth1>WWF</h1>
+                                                &ltp>The World Wide Fund for Nature (WWF) is an international organization working on 
+                                                issues regarding the conservation, research and restoration of the environment,
+                                                formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+                                            &lt/section>
+                                            
+                                            &ltsection>
+                                                &lth1>WWF's Panda symbol</h1>
+                                                &ltp>The Panda has become the symbol of WWF. The well-known panda logo of 
+                                                WWF originated from a panda named Chi Chi that was transferred from the 
+                                                Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+                                            &lt/section>
+                                </pre>
+    
+
+                        </td>
+                        <td>
+                            <section>
+                                <h1>WWF</h1>
+                                <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+                              </section>
+                              
+                              <section>
+                                <h1>WWF's Panda symbol</h1>
+                                <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+                              </section>
+                            
+                        </td> 
+                </tr>
+
+                </tbody>
+                <tfoot>
+                </tfoot>
+              </table>
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Elements Example</title>
+    <style>
+        thead {
+            color: green;
+        }
+
+        tbody {
+            color: blue;
+        }
+
+        tfoot {
+            color: red;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        tr td.heading {
+            font-size: 20px;
+            font-weight: bold;
+            color: red;
+            text-align: center;
+        }
+
+        .mainheading td {
+            color: green;
+            font-size: 30px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <table width="100%">
+        <thead>
+            <tr>
+                <td colspan="5">
+                    <h1 style="text-align: center">Html Elements Example</h1>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="mainheading">
+                <td>SNo</td>
+                <td>Tag</td>
+                <td>Describe</td>
+                <td>Code</td>
+                <td>Output</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="heading">Tabular Data</td>
+            </tr>
+            <tr>
+                <td style="text-align: center">1</td>
+                <td>
+                    <ul>
+                        <li>&lttable></li>
+                        <li>&ltcaption></li>
+                        <li>&lttbody></li>
+                        <li>&ltthead></li>
+                        <li>&lttr></li>
+                        <li>&lttd></li>
+                        <li>&ltth></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Create a Table</li>
+                        <li>Create a caption of the Table</li>
+                        <li>The body of the table</li>
+                        <li>Create header of the table</li>
+                        <li>Create a header of the Row</li>
+                        <li>Create a row of the table</li>
+                        <li>Create a column of the table</li>
+                    </ul>
+                </td>
+                <td>
+                    <code>
+        <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">The table header</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>The table body</td>
+                        <td>with two columns</td>
+                    </tr>
+                </tbody>
+            </table>
+</code>
+
+                    <!-- <ul>
+                                    <li>&lttable>&lt/table></li> 
+                                    <li>&ltcaption>&lt/caption></li>                                   
+                                    <li>&lttbody>&lt/tbody></li> 
+                                    <li>&ltthead>&lt/thead></li> 
+                                    <li>&lttr>&lt/tr></li> 
+                                    <li>&lttd>&lt/td></li> 
+                                    <li>&ltth>&lt/th></li>               
+                                </ul> -->
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="heading">Forms elements</td>
+            </tr>
+            <tr>
+                <td style="text-align: center">2</td>
+                <td>
+                    <ul>
+                        <li>&ltform> </li>
+                        <li>&ltlabel> </li>
+                        <li>&ltinput> </li>
+                        <li>&ltbutton> </li>
+                        <li>&lttextarea></li>
+                        <li>&ltselect> </li>
+                        <li>&ltfieldset> </li>
+                        <li>&ltegend> </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Create the Form using this tag</li>
+                        <li>Label for a control</li>
+                        <li>Input control</li>
+                        <li>Button </li>
+                        <li>Multi-line text input its used for address entry </li>
+                        <li>Group of controls</li>
+                        <li>The caption of a group of controls</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>&ltform> &lt/form> </li>
+                        <li>&ltlabel> &lt/label> </li>
+                        <li>&ltinput> &lt/input> </li>
+                        <li>&ltbutton> &lt/button></li>
+                        <li>&lttextarea>&lt/textarea></li>
+                        <li>&ltselect> &lt/select></li>
+                        <li>&ltfieldset> &lt/fieldset></li>
+                        <li>&ltlegend> &lt/legend></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="heading">EMBEDDED CONTENT</td>
+            </tr>
+            <tr>
+                <td style="text-align: center">3</td>
+                <td>
+                    <ul>
+                        <li>&ltpicture></li>
+                        <li>&ltimg></li>
+                        <li>&ltiframe></li>
+                        <li>&ltembed></li>
+                        <li>&ltobject></li>
+                        <li>&ltvideo></li>
+                        <li>&ltaudio></li>
+                        <li>&ltsource></li>
+                        <li>&lttrack></li>
+                        <li>&ltmap></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Multi-source image</li>
+                        <li> You can insert any image in your web page by using <img> tag.</li>
+                        <li>Nested browsing context</li>
+                        <li>Defines a container for an external (non-HTML) application</li>
+                        <li>Video-Defines sound content</li>
+                        <li>Audio-Defines sound content</li>
+                        <li>Alternative media resource</li>
+                        <li>Text tracks for videos</li>
+                        <li>Client-side image map</li>
+
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>&ltpicture>&lt/picture></li>
+                        <li>&ltimg>&lt/img></li>
+                        <li>&ltiframe>&lt/iframe></li>
+                        <li>&ltembed>&lt/embed></li>
+                        <li>&ltobject>&lt/object></li>
+                        <li>&ltvideo>&lt/video></li>
+                        <li>&ltaudio>&lt/audio></li>
+                        <li>&ltsource>&lt/source></li>
+                        <li>&lttrack>&lt/track></li>
+                        <li>&ltmap>&lt/map></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="heading">Other Tags</td>
+            </tr>
+            <tr>
+                <td style="text-align: center">4</td>
+                <td>
+                    <ul>
+                        <li>&ltscript></li>
+                        <li>&ltdiv></li>
+                        <li>&ltspan></li>
+                        <li>&ltmeta></li>
+                        <li>&lta></li>
+                        <li>&ltcanvas</li>
+                        <li>&ltsvg></li>
+
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>to include a external javascript file</li>
+                        <li>This is the very important block level tag which plays a big role <br>in grouping various
+                            other HTML tags and applying CSS on group of elements </li>
+                        <li>to display some elements in the inline </li>
+                        <li>additional important information about a document in a variety of ways. </li>
+                        <li>anchor tag is used if the user click this it redirect to some html page. </li>
+                        <li>Container for dynamic bitmap graphics</li>
+                        <li>SVG has several methods for drawing paths, boxes, circles, text, and graphic images.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>&ltscript>&lt/script></li>
+                        <li>&ltdiv>&lt/div></li>
+                        <li>&ltspan>&lt/span></li>
+                        <li>&ltmeta>&lt/meta></li>
+                        <li>&lta>&lt/a></li>
+                        <li>&ltcanvas>&lt/canvas></li>
+                        <li>&ltsvg></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="heading">Block level Elements</td>
+            </tr>
+            <tr>
+                <td style="text-align: center">5</td>
+                <td colspan="3">
+                    <ul>
+                        <li>
+                            &ltaddress>
+                            &ltarticle>
+                            &ltaside>
+                            &ltblockquote>
+                            &ltcanvas>
+                            &ltdd>
+                            &ltdiv></li>
+                        <li>
+                            &ltdl>
+                            &ltdt>
+                            &ltfieldset>
+                            &ltfigcaption>
+                            &ltfigure>
+                            &ltfooter>
+                            &ltform>
+                            &lth1>-&lth6></li>
+                        <li>
+                            &ltheader>
+                            &lthr>
+                            &ltli>
+                            &ltmain>
+                            &ltnav>
+                            &ltnoscript>
+                            &ltol>
+                            &ltp>
+                            &ltpre>
+                            &ltsection>
+                        </li>
+                        <li>
+                            &lttable>
+                            &lttfoot>
+                            &ltul>
+                            &ltvideo>
+                        </li>
+
+
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+</body>
+
+</html>
