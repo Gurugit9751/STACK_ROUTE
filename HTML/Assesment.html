@@ -3,9 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
     <title>One Page Resume</title>
-
     <style type="text/css">
         * {
             margin: 0;
@@ -30,6 +28,7 @@
             border-radius: 10px;
             box-shadow: 2px 2px 10px 2px #969696;
         }
+
         #pic {
             float: right;
             width: 126px;
@@ -39,6 +38,7 @@
             line-height: 120px;
             color: #858a8a;
         }
+
         h1 {
             margin: 0 0 16px 0;
             padding: 0 0 16px 0;
@@ -48,11 +48,13 @@
             border-bottom: 1px solid #999;
             width: 760px;
         }
+
         h2 {
             font-size: 20px;
             margin: 0 0 6px 0;
             position: relative;
         }
+
         h2 span {
             position: absolute;
             bottom: 0;
@@ -63,24 +65,37 @@
             color: #999;
             font-weight: normal;
         }
+
         p {
             margin: 0 0 16px 0;
         }
+
         a {
             color: #999;
             text-decoration: none;
             border-bottom: 1px dotted #999;
         }
+
         a:hover {
             border-bottom-style: solid;
             color: black;
         }
+
         ul {
             margin: 0 0 32px 17px;
         }
 
         ul.subclass>li {
             margin: 2px 0px 0px 12px;
+        }
+
+        table tr td {
+            border: 1px solid gray;
+        }
+
+        table tbody tr th {
+            border: 1px solid gray;
+            padding: 4px;
         }
 
         #objective {
@@ -122,23 +137,31 @@
         .education tr td {
             padding: 4px;
         }
+
+        .hrtable {
+            background: #b9b2b2;
+        }
+
+        .odd {
+            background: #f7eaea;
+        }
+
+        .even {
+            background: #e2cadb;
+        }
     </style>
 </head>
 
 <body>
-
     <div id="page-wrap">
-
-        <img src="images/guru.png" alt="Img of guru" id="pic" />
-
+        <img src="guru.jpg" alt="Img of guru" id="pic" />
         <div id="contact-info" class="vcard">
-            <h1 class="fn">Kumaraguru.D</h1>
+            <h1 class="fn">Kumaraguru.D </h1>
             <p>
                 Cell: <span class="tel">9751060060</span><br />
                 Email: <a class="email" href="mailto:gurusoftrvp@gmail.com">gurusoftrvp@gmail.com</a>
             </p>
         </div>
-
         <div id="objective">
             <b>Objective</b>
             <p>
@@ -146,7 +169,6 @@
                 affiliated, my parents and my country with the best of my abilities.
             </p>
         </div>
-
         <section>
             <div class="clear"></div>
             <h4 class="main">Profile Summary</h4>
@@ -168,55 +190,52 @@
                 </ul>
             </aside>
         </section>
-
-        <!-- <div class="clear"></div> -->
         <section>
             <div class="clear"></div>
             <h4 class="main">Education</h4>
             <aside>
-                <table class="education" border="1" style="border-color:gray;border-collapse:collapse;">
-                    <thead>
-                        <th>Degree</th>
-                        <th>Institution</th>
-                        <th>Passing</th>
-                        <th>University</th>
-                        <th>Percentage</th>
-                    </thead>
+                <table class="education" style="border-collapse:collapse;">
                     <tbody>
-                        <tr>
+                        <tr class="hrtable">
+                            <th>Degree</th>
+                            <th>Institution</th>
+                            <th>Passing</th>
+                            <th>University</th>
+                            <th>Percentage</th>
+                        </tr>
+                        <tr class="odd">
                             <td>MCA</td>
                             <td>STC College, Pollachi.</td>
                             <td>2011-2014</td>
                             <td>Bharathiar University</td>
                             <td>84%</td>
                         </tr>
-                        <tr>
+                        <tr class="even">
                             <td>BSC[CS]</td>
                             <td>STC College, Pollachi</td>
                             <td>2007-2010</td>
                             <td>Bharathiar University</td>
                             <td>70%</td>
                         </tr>
-                        <tr>
+                        <tr class="odd">
                             <td>HSC</td>
                             <td>G.K.N Higher Sec School.</td>
                             <td>2007</td>
                             <td>State Board</td>
                             <td>64%</td>
                         </tr>
-                        <tr>
+                        <tr class="even">
                             <td>SSLC</td>
                             <td>G.K.N Higher Sec School.</td>
                             <td>2005</td>
                             <td>State Board</td>
                             <td>75%</td>
                         </tr>
-                        <tr style="height:16px"></tr>
                     </tbody>
                 </table>
             </aside>
         </section>
-        <section><br>
+        <section>
             <div class="clear"></div>
             <h4 class="main">Skills</h4>
             <aside>
@@ -278,11 +297,21 @@
                     <li>DVB Event Information Tables are dynamical generated based on input event schedule.</li>
                 </ul>
             </aside>
+            <aside>
+                <h3>3.EPG Authoring Tool: </h3><br>
+                <h4>Key Establishments:</h4>
+                <ul>
+                    <li> Maintained Events, Channel, Carrier, Service Info, Linkage descriptor, Parental Ratings.</li>
+                    <li> EIT present/following and schedule tables for up to 7 days.</li>
+                    <li> Event information can be imported from XML, XMLTV, CSV or from SQL databases.</li>
+                    <li> Running on reliable Linux operating system and window operating system.</li>
+                    <li> Implemented PHP-CPP layer to protected and host PHP script in apache web-server.</li>
+                    <li> DVB Event Information Tables are dynamical generated based on input event schedule.</li>
+                </ul>
+            </aside>
         </section>
         <div class="clear"></div>
-
     </div>
-
 </body>
 
 </html>
