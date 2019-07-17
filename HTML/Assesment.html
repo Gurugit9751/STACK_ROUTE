@@ -1,6 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -25,14 +24,21 @@
 
         #page-wrap {
             width: 890px;
-            margin: 40px auto 60px;
+            margin: 40px auto 20px;
+            background: #e4e4e4;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px 2px #969696;
         }
-
         #pic {
             float: right;
-            margin: -30px 0 0 0;
+            width: 126px;
+            height: 120px;
+            background: #d4d4d4;
+            border-radius: 20px;
+            line-height: 120px;
+            color: #858a8a;
         }
-
         h1 {
             margin: 0 0 16px 0;
             padding: 0 0 16px 0;
@@ -40,14 +46,13 @@
             font-weight: bold;
             letter-spacing: -2px;
             border-bottom: 1px solid #999;
+            width: 760px;
         }
-
         h2 {
             font-size: 20px;
             margin: 0 0 6px 0;
             position: relative;
         }
-
         h2 span {
             position: absolute;
             bottom: 0;
@@ -58,22 +63,18 @@
             color: #999;
             font-weight: normal;
         }
-
         p {
             margin: 0 0 16px 0;
         }
-
         a {
             color: #999;
             text-decoration: none;
             border-bottom: 1px dotted #999;
         }
-
         a:hover {
             border-bottom-style: solid;
             color: black;
         }
-
         ul {
             margin: 0 0 32px 17px;
         }
@@ -83,7 +84,7 @@
         }
 
         #objective {
-            width: 700px;
+            width: 830px;
             float: left;
         }
 
@@ -102,6 +103,7 @@
             width: 150px;
             float: left;
             height: 100px;
+            color: #dc7777;
         }
 
         aside {
@@ -116,6 +118,7 @@
             margin: 0;
             height: 15px;
         }
+
         .education tr td {
             padding: 4px;
         }
@@ -126,7 +129,7 @@
 
     <div id="page-wrap">
 
-        <img src="images/cthulu.png" alt="Photo of Cthulu" id="pic" />
+        <img src="images/guru.png" alt="Img of guru" id="pic" />
 
         <div id="contact-info" class="vcard">
             <h1 class="fn">Kumaraguru.D</h1>
@@ -171,7 +174,7 @@
             <div class="clear"></div>
             <h4 class="main">Education</h4>
             <aside>
-                                <table class="education" border="1" style="border-color:gray;border-collapse:collapse;">
+                <table class="education" border="1" style="border-color:gray;border-collapse:collapse;">
                     <thead>
                         <th>Degree</th>
                         <th>Institution</th>
@@ -224,11 +227,14 @@
                     <li>Javascript ES5/ES6, JQuery , React JS,Ajax, Json</li>
                     <li> PHP & MYSQL</li>
                 </ul>
-
+            </aside>
+            <aside>
                 <h4>Version Control & Testing framework </h4>
                 <ul class="subclass">
                     <li> Tortoise SVN , Perforce & Jasmine Tool </li>
                 </ul>
+            </aside>
+            <aside>
                 <h4>Standards & Specifications</h4>
                 <ul class="subclass">
                     <li> ISO/IEC 13818-1 Standards (DVB) & HbbTV 1.5 Specifications.</li>
@@ -236,6 +242,8 @@
                     <li> OTT & VOD & IVP DTH Architecture</li>
                     <li> Delivery Systems for STB : DVB-C, DVB-T/T2, DVB-S/S2</li>
                 </ul>
+            </aside>
+            <aside>
                 <h4>Micro- Controllers : MSTAR & ST & HiSilicon & Broadcom Platforms</h4>
                 <ul class="subclass">
                     <li> K2,K5 – 7866, 7x75, 7x77
@@ -245,29 +253,32 @@
                 </ul>
             </aside>
         </section>
-
-
         <section>
             <div class="clear"></div>
-
-            <h4 class="main">Experience</h4>
+            <h4 class="main">Projects</h4>
             <aside>
-                <h2>Doomsday Cult <span>Leader/Overlord - Baton Rogue, LA - 1926-2010</span></h2>
+                <h3>1.DVB-S+FTA+PVR+MHEG+HBBTV1.5+eWEB-Middleware Supported STB : </h3><br>
+                <h4>Key Establishments:</h4>
                 <ul>
-                    <li>Inspired and won highest peasant death competition among servants</li>
-                    <li>Helped coordinate managers to grow cult following</li>
-                    <li>Provided untimely deaths to all who opposed</li>
+                    <li>Understanding the design and key requirements for a given modules</li>
+                    <li>Scanning features (Satellite Scan, Add Carrier, Edit Carrier).</li>
+                    <li>System update (S/W Upgrade, Manual Upgrade, Force OND, OTA)</li>
+                    <li>Channel list (Tuner Engagement, Channel info, Favorite List, Channel Organizer.</li>
                 </ul>
-
-                <h2>The Watering Hole <span>Bartender/Server - Milwaukee, WI - 2009</span></h2>
+            </aside>
+            <aside>
+                <h3>2.HbbTV Automation Test Tool: </h3><br>
+                <h4>Key Establishments:</h4>
                 <ul>
-                    <li>Worked on grass-roots promotional campaigns</li>
-                    <li>Reduced theft and property damage percentages</li>
-                    <li>Janitorial work, Laundry</li>
+                    <li>Maintained Events, Channel, Carrier, Service Info, Linkage descriptor, Parental Ratings.</li>
+                    <li>EIT present/following and schedule tables for up to 7 days.</li>
+                    <li>Event information can be imported from XML, XMLTV, CSV or from SQL databases.</li>
+                    <li>Running on reliable Linux operating system and window operating system.</li>
+                    <li>Implemented PHP-CPP layer to protected and host PHP script in apache web-server.</li>
+                    <li>DVB Event Information Tables are dynamical generated based on input event schedule.</li>
                 </ul>
             </aside>
         </section>
-
         <div class="clear"></div>
 
     </div>
